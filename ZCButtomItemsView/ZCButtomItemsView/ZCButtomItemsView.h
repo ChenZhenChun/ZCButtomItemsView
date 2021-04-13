@@ -50,5 +50,6 @@
 
 @property (nonatomic,copy) NSString *(^itemTitleBlock)(NSInteger index);//获取标题
 @property (nonatomic,copy) void(^configItemBlock)(UIButton *sender);
+@property (nonatomic,copy) void(^itemFrameBlock)(CGRect frame,NSInteger index);
 @property (nonatomic,copy) void(^clickItemBlock)(UIButton *sender);
 @end

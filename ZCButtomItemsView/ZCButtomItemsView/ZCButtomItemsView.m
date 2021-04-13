@@ -84,6 +84,9 @@
             width = _width;
         }
         btn.frame = CGRectMake(maxX,minY,width,_itemH);
+        if (self.itemFrameBlock) {
+            self.itemFrameBlock(btn.frame, btn.tag);
+        }
         maxX+=(width+_interitemSpace);
         [self addSubview:btn];
     }
